@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pluton Com.Info</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="image.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/files.js" defer></script>
+  <script src="js/theme.js" defer></script>
+  <script src="js/render.js" defer></script>
+  <script src="js/main.js" defer></script>  
+  
+</head>
+<body>
+  <div class="theme-toggle">
+    <button class="theme-btn" id="themeToggle" title="Toggle theme">
+      <i class="fas fa-sun" style="display: none;"></i>
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
+  <div class="container">
+    <header>
+      <div class="header-left">
+        <h1>Pluton Com.Info <i class="fa-solid fa-person-rifle"></i></h1>
+        <p>Toate fişierele sunt aici</p>
+      </div>
+      <div class="header-stats">
+        <div class="stat-item">
+          <div class="stat-value" id="totalFiles">0</div>
+          <div class="stat-label">Fişiere</div>
+        </div>
+        <!--<div class="stat-item">
+          <div class="stat-value" id="totalSize">0 MB</div>
+          <div class="stat-label">Total Size</div>
+        </div>-->
+        <div class="stat-item">
+          <div class="stat-value" id="lastUpdate">Azi</div>
+          <div class="stat-label">Modificat</div>
+        </div>
+        <button class="stat-consum">CONSUM <i class="fa-solid fa-arrow-rotate-left"></i> </button>
+      </div>
+    </header>
+
+    <div class="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="search" placeholder="Caută fişierul după nume, tip, sau dată...">
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">
+        <i class="fas fa-layer-group"></i> Toate Fişiere
+      </button>
+      <button class="filter-btn" data-filter="word">
+        <i class="fa-solid fa-file-word"></i> Word
+      </button>
+      <button class="filter-btn" data-filter="excel">
+        <i class="fa-solid fa-file-excel"></i> Excel
+      </button>
+    </div>
+
+    <main id="fileList">
+      <!-- Files will be rendered here -->
+    </main>
+
+    <footer>
+      <p>© 2026 BGe. WebSite Local.</p>
+      <p style="margin-top: 5px;">Pentru a instala fişierul fă click pe buttonul "Instalează".</p>
+    </footer>
+  </div>
+
+</body>
+</html>
